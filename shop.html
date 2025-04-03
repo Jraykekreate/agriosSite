@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Healthy Food</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Agrios</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shop-hero">
+            <div class="shop-content">
+                <h1>Our Products</h1>
+                <p>Discover our selection of healthy and organic products</p>
+            </div>
+        </section>
+
+        <section class="shop-container">
+            <aside class="filters">
+                <h3>Filters</h3>
+                <div class="filter-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><input type="checkbox" id="fruits"> <label for="fruits">Fruits</label></li>
+                        <li><input type="checkbox" id="vegetables"> <label for="vegetables">Vegetables</label></li>
+                        <li><input type="checkbox" id="snacks"> <label for="snacks">Healthy Snacks</label></li>
+                        <li><input type="checkbox" id="beverages"> <label for="beverages">Beverages</label></li>
+                    </ul>
+                </div>
+                <div class="filter-section">
+                    <h4>Price Range</h4>
+                    <input type="range" min="0" max="100" value="50" class="price-slider">
+                    <div class="price-range">
+                        <span>$0</span>
+                        <span>$100</span>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h4>Sort By</h4>
+                    <select class="sort-select">
+                        <option value="popular">Most Popular</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest First</option>
+                    </select>
+                </div>
+            </aside>
+
+            <div class="products-grid">
+                <div class="product-item">
+                    <img src="./apples.jpg" alt="Organic Apples">
+                    <h3>Organic Apples</h3>
+                    <p class="price">$4.99/kg</p>
+                    <p class="description">Fresh organic apples from local farms</p>
+                    <a href="shop-details.html" class="button">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="./spinach.jpg" alt="Fresh Spinach">
+                    <h3>Fresh Spinach</h3>
+                    <p class="price">$3.99/bunch</p>
+                    <p class="description">Organic spinach leaves</p>
+                    <a href="shop-details.html" class="button">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="./nuts.jpg" alt="Mixed Nuts">
+                    <h3>Mixed Nuts</h3>
+                    <p class="price">$12.99/pack</p>
+                    <p class="description">Healthy mix of nuts and dried fruits</p>
+                    <a href="shop-details.html" class="button">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="./tea.jpg" alt="Green Tea">
+                    <h3>Organic Green Tea</h3>
+                    <p class="price">$8.99/box</p>
+                    <p class="description">Premium organic green tea leaves</p>
+                    <a href="shop-details.html" class="button">View Details</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are committed to providing the best healthy food options for our customers.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@Agrios.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Healthy Street, Food City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Healthy Food. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

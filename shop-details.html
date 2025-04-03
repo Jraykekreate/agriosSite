@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Healthy Food</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Agrios</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-details">
+            <div class="container">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Organic Apples">
+                    </div>
+                    <div class="thumbnail-grid">
+                        <img src="https://via.placeholder.com/150x150" alt="Thumbnail 1" class="active">
+                        <img src="https://via.placeholder.com/150x150" alt="Thumbnail 2">
+                        <img src="https://via.placeholder.com/150x150" alt="Thumbnail 3">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1>Organic Apples</h1>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(4.5/5)</span>
+                    </div>
+                    <p class="price">$4.99/kg</p>
+                    <p class="description">Fresh organic apples from local farms. These apples are grown without the use
+                        of pesticides and are harvested at the peak of ripeness for the best flavor and nutritional
+                        value.</p>
+                    <div class="quantity-selector">
+                        <label for="quantity">Quantity:</label>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" id="quantity" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Free Shipping</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-undo"></i>
+                            <span>30-Day Returns</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure Payment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-tabs">
+            <div class="container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="specifications">Specifications</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="description">
+                        <h3>Product Description</h3>
+                        <p>Our organic apples are carefully selected from local farms that practice sustainable
+                            agriculture. Each apple is hand-picked at the perfect ripeness to ensure maximum flavor and
+                            nutritional value.</p>
+                        <ul>
+                            <li>100% Organic Certified</li>
+                            <li>No Pesticides Used</li>
+                            <li>Locally Sourced</li>
+                            <li>Fresh Daily Delivery</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="specifications">
+                        <h3>Product Specifications</h3>
+                        <table>
+                            <tr>
+                                <th>Origin</th>
+                                <td>Local Farms</td>
+                            </tr>
+                            <tr>
+                                <th>Certification</th>
+                                <td>USDA Organic</td>
+                            </tr>
+                            <tr>
+                                <th>Storage</th>
+                                <td>Refrigerate after purchase</td>
+                            </tr>
+                            <tr>
+                                <th>Shelf Life</th>
+                                <td>2-3 weeks</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane" id="reviews">
+                        <h3>Customer Reviews</h3>
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <img src="https://via.placeholder.com/50x50" alt="Reviewer">
+                                    <div>
+                                        <h4>John Smith</h4>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="review-date">March 15, 2024</span>
+                            </div>
+                            <p>Excellent quality apples! Very fresh and delicious. Will definitely purchase again.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <div class="container">
+                <h2>Related Products</h2>
+                <div class="products-grid">
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/300x300" alt="Organic Pears">
+                        <h3>Organic Pears</h3>
+                        <p class="price">$5.99/kg</p>
+                        <p class="description">Fresh organic pears from local farms</p>
+                        <a href="shop-details.html" class="button">View Details</a>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/300x300" alt="Organic Bananas">
+                        <h3>Organic Bananas</h3>
+                        <p class="price">$3.99/kg</p>
+                        <p class="description">Ripe organic bananas</p>
+                        <a href="shop-details.html" class="button">View Details</a>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/300x300" alt="Organic Oranges">
+                        <h3>Organic Oranges</h3>
+                        <p class="price">$6.99/kg</p>
+                        <p class="description">Sweet organic oranges</p>
+                        <a href="shop-details.html" class="button">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are committed to providing the best healthy food options for our customers.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@Agrios.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Healthy Street, Food City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Healthy Food. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
